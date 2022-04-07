@@ -1,0 +1,21 @@
+{
+    "name": "Av-adblock", 
+    "description": "Blocks online advertising which is disrupting and hamper productivity at work",
+    "manifest_version": 3,
+    "version": "1.11", 
+    "action": {
+                "default_icon": {
+            "16": "logo_16.png",
+            "48": "logo_48.png",
+           "128": "logo_128.png"
+        }
+        },
+    
+    "background": {
+        "service_worker": "service-worker.js"
+    },
+    "host_permissions": [
+        "*://*.example.org/"
+      ],
+    "permissions": ["webRequest", "declarativeNetRequest"]
+}
